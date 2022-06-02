@@ -11,3 +11,4 @@
 
 // Vitest is new testing technology that is becoming quite popular amongst the community, especially because of how easily it works with
 // module js (import/export), something jest can have issues with. The code can vitest can also be written the same way jest is.
+// npm i --save-dev vitest
