@@ -8,7 +8,7 @@ import { add } from "./math.js";
 it("should summarize all number values in an array", () => {
   // Here we store our results in a variable called result which we then pass
   // into our expect keyword. From there we can use the "to" method and select the
-  // appropriate option and define the expected result.
+  // appropriate option, in this case "toBe", and define the expected result.
   const result = add([1, 2, 3]);
   expect(result).toBe(6);
 });
