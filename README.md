@@ -33,3 +33,7 @@ A simple repository for unit testing, integration testing full of examples and n
 ### Keep your tests simple and concice
 
 - Think about yourself coming back to a test after a long period of time, or a fellow developer working with the test. Everyone should be able to quickly understand and change the test if needed.
+
+### Be thorough
+
+- Think of all the possible scenarios that could occur for your units/functions and how you can write a test for those scenarios.
