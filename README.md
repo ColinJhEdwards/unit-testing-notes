@@ -29,3 +29,7 @@ A simple repository for unit testing, integration testing full of examples and n
 - Arrange: Define the testing environment and values
 - Act: Run the actual code/function that should be tested
 - Assert: Evaluate the produced value/result and compare it to the expected value/result
+
+### Keep your tests simple and concice
+
+- Think about yourself coming back to a test after a long period of time, or a fellow developer working with the test. Everyone should be able to quickly understand and change the test if needed.

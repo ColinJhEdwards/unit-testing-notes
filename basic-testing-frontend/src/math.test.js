@@ -21,3 +21,18 @@ it("should summarize all number values in an array", () => {
 
 // Because of how we have written our test we avoid this problem by calculating the total
 // ahead of time and passing that variable into our expected line of code instaed
+
+it("should yield Nan if at least one invalid number is provided", () => {
+  const inputs = ["invalid", 1];
+  const results = add(inputs);
+
+  expect(results).toBeNaN();
+});
+
+it("should yield a correct sum if an array of numeric string values is provided", () => {
+  const inputs = ["1", "2"];
+  const expectedResults = numbers.reduce((a, b) => +a + +b, 0);
+  const results = add(inputs);
+
+  expect(results).toBe(expectedResults);
+});
