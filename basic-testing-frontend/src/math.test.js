@@ -42,6 +42,8 @@ it("should yield 0 if an empty array is provided", () => {
   const numbers = [];
   const results = add(numbers);
 
+  // tests also have the feature of "not" so the line of code below could
+  // look like "expect(results).not.ToBe(0)" if our expected result should not be 0
   expect(results).toBe(0);
 });
 
@@ -50,5 +52,15 @@ it("should throw an error if no value is passed into the function", () => {
     add();
   };
 
+  expect(resultFn).toThrow();
+});
+
+it("should throw an error if provided with multiple arguments instead of an array", () => {
+  const num1 = 1;
+  const num2 = 2;
+
+  const resultFn = () => {
+    add(num1, num2);
+  };
   expect(resultFn).toThrow();
 });
