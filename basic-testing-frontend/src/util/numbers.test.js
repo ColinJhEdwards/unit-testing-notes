@@ -8,17 +8,13 @@ it("should transform a string number to a number of type numner", () => {
   expect(result).toBe(expectedResult);
 });
 
-// it("should throw an error if no value is given", () => {
-//   const resultFn = () => {
-//     transformToNumber();
-//   };
-
-//   expect(resultFn).toThrow();
-// });
-
 it("should yield Nan if a value is given that cannot be converted to a numebr", () => {
-  const input = "invalid";
-  const result = transformToNumber(input);
+  const input1 = "invalid";
+  const input2 = {};
+  const result1 = transformToNumber(input1);
+  const result2 = transformToNumber(input2);
 
-  expect(result).toBeNaN();
+  //   You can do multiple expectations for tests where it would make sense to do so
+  expect(result1).toBeNaN();
+  expect(result2).toBeNaN();
 });
