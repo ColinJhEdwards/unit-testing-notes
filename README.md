@@ -36,4 +36,4 @@ A simple repository for unit testing, integration testing full of examples and n
 
 ### Be thorough
 
-- Think of all the possible scenarios that could occur for your units/functions and how you can write a test for those scenarios.
+- Think of all the possible scenarios that could occur for your units/functions and how you can write a test for those scenarios
